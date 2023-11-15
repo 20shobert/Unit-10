@@ -43,9 +43,19 @@
 <main>
 <h2>Order Your Movie Experience Here</h2>
 
+<form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php">
 
 <h3>Choose Movie Details</h3>
 <div class="movie choose">
+  <label for="movie">Select a Movie</label>
+  <select name="movie" id="movie">
+    <option value="0">ABCD</option>
+    <option value="1">ABCD</option>
+    <option value="2">ABCD</option>
+    <option value="3">ABCD</option>
+    <option value="4">ABCD</option>
+    <option value="5">ABCD</option>
+  </select>
 
 </div>
 
@@ -57,12 +67,13 @@
 
 <h3>Choose Type of Experience</h3>
 
-<form method="post" action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
 
 <div class="choose">
 
 </div>
 
+<fieldset id="movie_only">
+<legend>Enter Quantities</legend>
 
   <p class="heading">
     <span class="first">Product</span>
@@ -86,8 +97,9 @@
     <input type="text" id="movie_child_total" class="cost" 
       name="movie_child_total" value="0.00">
   </p>
-
-
+</fieldset>
+<fieldset id="movie_plus">
+<legend>Enter Quantities</legend>
   <p class="heading">
     <span class="first">Product</span>
     <span class="second">Price</span>
@@ -134,10 +146,11 @@
     <input type="text" id="drink_total" class="cost" 
       name="drink_total" value="0.00">
   </p>
-
+</fieldset>
 
 <h3>See the Total</h3>
-
+<fieldset id="movie_total">
+<legend>Totals</legend>
   <p class="total">
     <label for="sales_tax">Sales Tax</label>
     <input type="text" id="sales_tax" class="cost" 
@@ -148,6 +161,11 @@
     <input type="text" id="total" class="cost" 
       name="total" value="0.00">
   </p>
+
+<p>
+  <input type="submit" name="submit" value="Place Order">
+</p>
+</fieldset>
 
 </form>
 
