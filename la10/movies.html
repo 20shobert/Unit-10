@@ -97,8 +97,15 @@
 
 <h3>Choose Type of Experience</h3>
 
-
 <div class="choose">
+  <p>
+    <input type="radio" name="package" id="ticket" value="ticket">
+    <label for="ticket">Movie Tickets</label>
+  </p>
+  <p>
+    <input type="radio" name="package" id="complete" value="ticket">
+    <label for="complete">Complete Cinema Experience</label>
+  </p>
 
 </div>
 
@@ -117,7 +124,7 @@
     <input type="text" id="movie_adult_qty" class="quantity" 
       name="movie_adult_qty" value="0">
     <input type="text" id="movie_adult_total" class="cost" 
-      name="movie_adult_total" value="0.00">
+      name="movie_adult_total" value="0.00" readonly>
   </p>
   <p>
     <label for="movie_child_qty">Child Movie Ticket</label>
@@ -125,7 +132,7 @@
     <input type="text" id="movie_child_qty" class="quantity" 
       name="movie_child_qty" value="0">
     <input type="text" id="movie_child_total" class="cost" 
-      name="movie_child_total" value="0.00">
+      name="movie_child_total" value="0.00" readonly>
   </p>
 </fieldset>
 <fieldset id="movie_plus">
@@ -142,7 +149,7 @@
     <input type="text" id="adult_qty" class="quantity" 
       name="adult_qty" value="0">
     <input type="text" id="adult_total" class="cost" 
-      name="adult_total" value="0.00">
+      name="adult_total" value="0.00" readonly>
   </p>
   <p>
     <label for="child_qty">Child Movie Ticket</label>
@@ -150,7 +157,7 @@
     <input type="text" id="child_qty" class="quantity" 
       name="child_qty" value="0">
     <input type="text" id="child_total" class="cost" 
-       name="child_total" value="0.00">
+       name="child_total" value="0.00" readonly>
   </p>
   <p>
     <label for="individual_qty">Individual Popcorn</label>
@@ -158,7 +165,7 @@
     <input type="text" id="individual_qty" class="quantity" 
       name="individual_qty" value="0">
     <input type="text" id="individual_total" class="cost" 
-      name="individual_total" value="0.00">
+      name="individual_total" value="0.00" readonly>
   </p>
   <p>
     <label for="share_qty">Popcorn to Share</label>
@@ -166,7 +173,7 @@
     <input type="text" id="share_qty" class="quantity" 
       name="share_qty" value="0">
     <input type="text" id="share_total" class="cost" 
-      name="share_total" value="0.00">
+      name="share_total" value="0.00" readonly>
   </p>
   <p>
     <label for="drink_qty">Large Drink</label>
@@ -174,7 +181,7 @@
     <input type="text" id="drink_qty" class="quantity" 
       name="drink_qty" value="0">
     <input type="text" id="drink_total" class="cost" 
-      name="drink_total" value="0.00">
+      name="drink_total" value="0.00" readonly>
   </p>
 </fieldset>
 
@@ -184,12 +191,12 @@
   <p class="total">
     <label for="sales_tax">Sales Tax</label>
     <input type="text" id="sales_tax" class="cost" 
-      name="sales_tax" value="0.00">
+      name="sales_tax" value="0.00" readonly>
   </p>
   <p class="total">
     <label for="total">Total</label>
     <input type="text" id="total" class="cost" 
-      name="total" value="0.00">
+      name="total" value="0.00" readonly>
   </p>
 
 <p>
