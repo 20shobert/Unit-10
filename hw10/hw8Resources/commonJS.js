@@ -35,6 +35,7 @@ document.getElementById("nav").innerHTML = `
                 <a href="hw3.html" title="Using CSS">Using CSS</a>
                 <a href="hw8.html" title="Going to a Park">Going to a Park</a>
                 <a href="hw9.html" title="A Slideshow">A Slideshow</a>
+                <a href="hw10.html" title="TITLE GOES HERE">TITLE GOES HERE</a>
             </div>
         </div>
     </li>
