@@ -195,6 +195,38 @@ h1, h2 {
 	margin-bottom: 0;
 }
 
+label {
+    font-family: donuts;
+    font-size: 18px;
+
+    padding-left: 12px;
+}
+
+select, input[type="text"] {
+    font-family: handlee;
+    font-size: 16px;
+
+    background-color: #fcf765;
+    border: solid 2px #850e05;
+    width: 120px;
+    height: 32px;
+}
+
+.radio {
+    font-family: handlee;
+    text-align: left;
+
+    width: 150px;
+}
+
+.beforeText {
+	display: inline-block;
+
+    text-align: left;
+
+    width: 120px;
+}
+
 footer section p {
 	text-align: center;
 	margin: auto auto auto auto;
