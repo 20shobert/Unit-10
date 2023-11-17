@@ -22,35 +22,37 @@
             <legend>Characteristics of the agent</legend>
 
             <p>
-                <label for="hairColor">Hair Color:</label>
+                <label for="hairColor" class="beforeText">Hair Color:</label>
                 <input type="text" id="hairColor" name="hairColor">
 
-                <input type="text" id="hairColorHex" name="hairColorHex" readonly>
+                <input type="text" id="hairColorHex" name="hairColorHex" value="will change color" readonly>
             </p>
             <p>
-                <label for="eyeColor">Eye Color:</label>
+                <label for="eyeColor" class="beforeText">Eye Color:</label>
                 <input type="text" id="eyeColor" name="eyeColor">
 
-                <input type="text" id="eyeColorHex" name="eyeColorHex" readonly>
+                <input type="text" id="eyeColorHex" name="eyeColorHex" value="will change color" readonly>
             </p>
             <p>
-                <label for="ethnicity">Ethnicity:</label>
+                <label for="ethnicity" class="beforeText">Ethnicity:</label>
                 <input type="text" id="ethnicity" name="ethnicity">
 
-                <input type="text" id="ethnicityHex" name="ethnicityHex" readonly>
+                <input type="text" id="ethnicityHex" name="ethnicityHex" value="will change color" readonly>
             </p>
 
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-                <option value="1">Male</option>
-                <option value="2">Female</option>
-                <option value="3">Transgender</option>
-                <option value="4">None</option>
-                <option value="5">Unknown</option>
-            </select>
+            <p>
+                <label for="gender" class="beforeText">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Transgender</option>
+                    <option value="4">None</option>
+                    <option value="5">Unknown</option>
+                </select>
+            </p>
 
             <p>
-                <label>Agent Class:</label>
+                <label class="beforeText">Agent Class:</label>
 
                 <input type="radio" id="class1" name="classType" value="duelist">
                 <label for="class1" class="radio">Duelist</label>
@@ -69,7 +71,7 @@
             <legend>Duelist Options (will collapse)</legend>
 
                 <p>
-                    <label>Movement Ability:</label>
+                    <label class="afterText">Movement Ability:</label>
 
                     <input type="radio" id="duelistMovement1" name="duelistMovementType" value="dash">
                     <label for="duelistMovement1" class="radio">Dash</label>
@@ -88,7 +90,7 @@
                 </p>
 
                 <p>
-                    <label>Ultimate Ability:</label>
+                    <label class="afterText">Ultimate Ability:</label>
 
                     <input type="radio" id="duelistUltimate1" name="duelistUltimateType" value="killContract">
                     <label for="duelistUltimate1" class="radio">Kill Contract</label>
@@ -117,7 +119,7 @@
             <legend>Initiator Options (will collapse)</legend>
 
                 <p>
-                    <label>Flash Ability:</label>
+                    <label class="afterText">Flash Ability:</label>
 
                     <input type="radio" id="initiatorFlash1" name="initiatorFlashType" value="flashpoint">
                     <label for="initiatorFlash1" class="radio">Flashpoint</label>
@@ -133,7 +135,7 @@
                 </p>
 
                 <p>
-                    <label>Ultimate Ability:</label>
+                    <label class="afterText">Ultimate Ability:</label>
 
                     <input type="radio" id="initiatorUltimate1" name="initiatorUltimateType" value="rollingThunder">
                     <label for="initiatorUltimate1" class="radio">Rolling Thunder</label>
@@ -159,7 +161,7 @@
             <legend>Sentinel Options (will collapse)</legend>
 
                 <p>
-                    <label>Trip Ability:</label>
+                    <label class="afterText">Trip Ability:</label>
 
                     <input type="radio" id="sentielTrip1" name="sentielTripType" value="trademark">
                     <label for="sentielTrip1" class="radio">Trademark</label>
@@ -175,7 +177,7 @@
                 </p>
 
                 <p>
-                    <label>Ultimate Ability:</label>
+                    <label class="afterText">Ultimate Ability:</label>
 
                     <input type="radio" id="sentinelUltimate1" name="sentinelUltimateType" value="tourDeForce">
                     <label for="sentinelUltimate1" class="radio">Tour De Force</label>
@@ -198,7 +200,7 @@
             <legend>Controller Options (will collapse)</legend>
 
                 <p>
-                    <label>Smoke Ability:</label>
+                    <label class="afterText">Smoke Ability:</label>
 
                     <input type="radio" id="controllerSmoke1" name="controllerSmokeType" value="nebula">
                     <label for="controllerSmoke1" class="radio">Nebula</label>
@@ -217,7 +219,7 @@
                 </p>
 
                 <p>
-                    <label>Ultimate Ability:</label>
+                    <label class="afterText">Ultimate Ability:</label>
 
                     <input type="radio" id="controllerUltimate1" name="controllerUltimateType" value="cosmicDivide">
                     <label for="controllerUltimate1" class="radio">Cosmic Divide</label>
