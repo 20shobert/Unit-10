@@ -18,7 +18,7 @@
 </header>
 
 <!-- Add form tag -->
-
+<form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php">
 
 <section>
 <h2>Pet Competitor</h2>
@@ -26,56 +26,93 @@
 <input type="text" name="name" id="name"  /></p>
 
 <!-- Add a number input for age -->
+<p>
+  <label for="petAge">Age of Pet</label>
+  <input type="number" id="petAge" name="petAge">
+</p>
 
 
 </section>
 
-<section class="checkbox" >
+<section class="checkbox">
 <h2>Which Competitions?</h2>
 <p>Select the competitions you want to participate in. You may select any number.</p>
 <p>The registration fee is $120.00 per competition.</p>
 
 <!-- Add the first checkbox input -->
+<p>
+  <input type="checkbox" id="singingPetsCheck" name="singingPetsCheck">
+  <label for="singingPetsCheck" class="checkbox">Singing Pets</label>
+</p>
 
 <div id="singAdd">
 <!-- Add a fieldset and legend -->
+<fieldset>
+<legend>Provide details for the singing pet competition</legend>
 
 <p><label for="singTitle">Title</label>
 <input type="text" name="singTitle" id="singTitle"  /></p>
 
 <!-- Add a file input -->
+<p>
+  <label for="singFile">Singing Demo</label>
+  <input type="file" id="singDemo" name="singDemo">
+</p>
 
-
+</fieldset>
 </div>
 
 
 <!-- Add the second checkbox input -->
+<p>
+  <input type="checkbox" id="cutestPetCompCheck" name="cutestPetCompCheck">
+  <label for="cutestPetCompCheck" class="checkbox">Cutest Pet Competition</label>
+</p>
 
 
 <div id="cuteAdd">
 <!-- Add a fieldset and legend -->
+<fieldset>
+<legend>Provide details for the cutest pet competition</legend>
 
 <p><label for="cuteTitle">Title</label>
 <input type="text" name="cuteTitle" id="cuteTitle"  /></p>
 
 <!-- Add a file input -->
+<p>
+  <label for="photoAlbum">Photo Album</label>
+  <input type="file" id="photoAlbum" name="photoAlbum">
+</p>
 
-
+</fieldset>
 </div>
 
 
 <!-- Add the third checkbox input -->
+<p>
+  <input type="checkbox" id="petTricksCompCheck" name="petTricksCompCheck">
+  <label for="petTricksCompCheck" class="checkbox">Pet Tricks Competition</label>
+</p>
 
 <div id="trickAdd">
 
 <!-- Add a fieldset and legend -->
+<fieldset>
+<legend>Provide details for the pet tricks competition</legend>
 
 <p><label for="trickTitle">Title</label>
 <input type="text" name="trickTitle" id="trickTitle"  /></p>
 
 <!-- Add a select element with options -->
+<label for="trickTypeDropdown">Trick Type</label>
+<select id="trickTypeDropdown" name="trickTypeDropdown">
+  <option value="1">Obstacle Course</option>
+  <option value="2">Frisbee/Ball/Other Catching</option>
+  <option value="3">Roll Over/Play Dead</option>
+  <option value="4">Other</option>
+</select>
 
-
+</fieldset>
 </div>
 
 </section>
@@ -85,6 +122,26 @@
 <h2>Pet Type?</h2>
 
 <!-- Add five radio buttons -->
+<p>
+  <input type="radio" id="petType1" name="petType" value="cat">
+  <label for="petType1" class="radio">Cat</label>
+</p>
+<p>
+  <input type="radio" id="petType2" name="petType" value="dog">
+  <label for="petType2" class="radio">Dog</label>
+</p>
+<p>
+  <input type="radio" id="petType3" name="petType" value="reptile">
+  <label for="petType3" class="radio">Reptile</label>
+</p>
+<p>
+  <input type="radio" id="petType4" name="petType" value="bird">
+  <label for="petType4" class="radio">Bird</label>
+</p>
+<p>
+  <input type="radio" id="petType5" name="petType" value="rodent">
+  <label for="petType5" class="radio">Rodent</label>
+</p>
 
 </section>
 
@@ -93,6 +150,8 @@
 <p>Enter the email of the person to contact.</p>
 
 <!-- Add an email input -->
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
 
 </section>
 
@@ -126,9 +185,13 @@ based on weight of pet.</p>
 <h2>Submit the Registration</h2>
 
 <!-- add a submit input  -->
+<p>
+  <input type="submit" id="submit" name="submit" value="Submit Registration">
+</p>
 
 </section>
 
+</form>
 <!-- close the form -->
 
 </body>
