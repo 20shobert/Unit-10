@@ -1,0 +1,8 @@
+fieldset {
+    border-left: solid 2px;
+    border-right: solid 2px;
+    border-top: 0;
+    border-bottom: 0;
+
+    border-radius: 6px;
+}

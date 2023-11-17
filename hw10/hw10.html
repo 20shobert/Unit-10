@@ -1,9 +1,9 @@
 <head id="head">
 
-    <title>TITLE GOES HERE</title>
+    <title>Create a Valorant Agent</title>
     
-    <meta name="description" content="TITLE GOES HERE">
-    <meta name="keywords" content="Spencer Hobert, CS2350, slideshow, slide, show, hw10, Homework 10, homework, 10">
+    <meta name="description" content="Creating a Valorant Agent">
+    <meta name="keywords" content="Spencer Hobert, CS2350, create a valorant agent, create, a, valorant, agent, valorant, hw10, Homework 10, homework, 10">
     <link rel="stylesheet" href="hw10Resources/hw10.css">
     
 </head>
@@ -14,14 +14,79 @@
     <div class="row">
     <main class="col-12">
 
-        <h1>TITLE GOES HERE</h1>
+        <h1>Create a Valorant Agent</h1>
 
         <form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php">
         <section>
+            <fieldset>
+            <legend>Characteristics of the agent</legend>
 
-            <p>Hi</p>
+            <p>
+                <label for="hairColor">Hair Color</label>
+                <input type="text" id="hairColor" name="hairColor">
+            </p>
+            <p>
+                <label for="eyeColor">Eye Color</label>
+                <input type="text" id="eyeColor" name="eyeColor">
+            </p>
+            <p>
+                <label for="ethnicity">Ethnicity</label>
+                <input type="text" id="ethnicity" name="ethnicity">
+            </p>
 
-            
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Transgender</option>
+                <option value="4">None</option>
+                <option value="5">Unkonwn</option>
+            </select>
+
+            <!-- CHANGE THIS -->
+            <p>
+                <input type="radio" id="petType1" name="petType" value="cat">
+                <label for="petType1" class="radio">Cat</label>
+            </p>
+            <p>
+                <input type="radio" id="petType2" name="petType" value="dog">
+                <label for="petType2" class="radio">Dog</label>
+            </p>
+            <p>
+                <input type="radio" id="petType3" name="petType" value="reptile">
+                <label for="petType3" class="radio">Reptile</label>
+            </p>
+            <p>
+                <input type="radio" id="petType4" name="petType" value="bird">
+                <label for="petType4" class="radio">Bird</label>
+            </p>
+            <p>
+                <input type="radio" id="petType5" name="petType" value="rodent">
+                <label for="petType5" class="radio">Rodent</label>
+            </p>
+            <!-- CHANGE THIS -->
+
+            </fieldset>
+
+            <fieldset>
+            <legend>Valorant Agent Results</legend>
+
+            <p>
+                <label for="hairColorHex">Hair Color</label>
+                <input type="text" id="hairColorHex" name="hairColorHex" readonly>
+            </p>
+            <p>
+                <label for="eyeColorHex">Eye Color</label>
+                <input type="text" id="eyeColorHex" name="eyeColorHex" readonly>
+            </p>
+            <p>
+                <label for="ethnicityHex">Ethnicity</label>
+                <input type="text" id="ethnicityHex" name="ethnicityHex" readonly>
+            </p>
+
+            </fieldset>
+
+            <input type="submit" id="submit" name="submit" value="Submit">
 
         </section>
         </form>
